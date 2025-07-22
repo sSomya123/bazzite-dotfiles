@@ -1,0 +1,32 @@
+font_family JetBrains Mono
+font_size 10.0
+background_opacity 0.5
+tab_bar_edge top 
+map ctrl+n new_window
+map ctrl+e new_tab
+map ctrl+shift+w close_window
+map ctrl+left neighboring_window left
+map ctrl+right neighboring_window right
+include dracula.conf
+startup_session ~/.config/kitty/startup.session
+draw_minimal_borders yes
+window_padding_width 2
+window_border_width 0
+titlebar-only yes
+# active_border_color none
+window_margin_width 4
+tab_bar_style powerline
+detect_urls no
+copy_on_select clipboard
+strip_trailing_spaces smart
+select_by_word_characters ${}/&@_.
+focus_follows_mouse yes
+#hide_window_decorations yes
+map ctrl+c        copy_to_clipboard
+map ctrl+v        paste_from_clipboard
+map shift+insert paste_from_clipboard
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Mocha
+include current-theme.conf
+# END_KITTY_THEME
